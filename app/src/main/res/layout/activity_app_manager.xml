@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+        <TextView android:id="@id/tv_phonememory_appmanager" android:layout_alignParentLeft="true" style="@style/textview12sp" />
+        <TextView android:id="@id/tv_sdmemory_appmanager" android:layout_alignParentRight="true" style="@style/textview12sp" />
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/lv_appmanager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" />
+        <TextView android:textColor="@color/black" android:id="@id/tv_appnumber" android:background="@color/graye5" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

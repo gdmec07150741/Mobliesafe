@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="400" android:drawable="@drawable/cacheclean_trashbin_close_icon" />
+    <item android:duration="400" android:drawable="@drawable/cacheclean_trashbin_open_icon" />
+</animation-list>

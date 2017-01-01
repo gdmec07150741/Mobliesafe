@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="10.0">
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <ImageView android:id="@id/imgv_traffic_remind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:src="@drawable/traffic_reminder_selector" />
+            <TextView android:gravity="center" android:id="@id/tv_traffic_remind" android:layout_marginLeft="10.0dip" android:text="本月流量充足请放心使用！" android:layout_toRightOf="@id/imgv_traffic_remind" android:layout_centerVertical="true" style="@style/textview16sp" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/traffic_green_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="30.0dip">
+            <TextView android:id="@id/tv_today_gprs" android:layout_margin="5.0dip" android:text="今天已用 ：" style="@style/textview16sp" />
+            <TextView android:id="@id/tv_month_usedgprs" android:layout_margin="5.0dip" android:text="本月已用 ：" style="@style/textview16sp" />
+            <TextView android:id="@id/tv_month_totalgprs" android:layout_margin="5.0dip" android:text="本月流量 ：" style="@style/textview16sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:layout_gravity="center_horizontal" android:id="@id/btn_correction_flow" android:background="@drawable/correction_flow_btn_selector" android:layout_width="280.0dip" android:layout_height="78.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="4.0" />
+</LinearLayout>

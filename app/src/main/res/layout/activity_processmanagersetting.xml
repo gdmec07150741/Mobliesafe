@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="55.0dip">
+        <ImageView android:id="@id/imageView1" android:background="@drawable/processmanager_showsysapps" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" style="@style/wrapcontent" />
+        <TextView android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:text="显示系统进程" android:layout_toRightOf="@id/imageView1" style="@style/wrapcontent" />
+        <ToggleButton android:id="@id/tgb_showsys_process" android:background="@drawable/toggle_btn_green_selector" android:layout_width="70.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:textOn="" android:textOff="" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:background="@color/black30" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="55.0dip">
+        <ImageView android:id="@id/imageView2" android:background="@drawable/processmanagerlockscreen_icon" android:layout_marginLeft="15.0dip" android:layout_alignParentLeft="true" style="@style/wrapcontent" />
+        <TextView android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:text="锁屏清理进程" android:layout_toRightOf="@id/imageView2" style="@style/wrapcontent" />
+        <ToggleButton android:id="@id/tgb_killprocess_lockscreen" android:background="@drawable/toggle_btn_green_selector" android:layout_width="70.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:textOn="" android:textOff="" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:background="@color/black30" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

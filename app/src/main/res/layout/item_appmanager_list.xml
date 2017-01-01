@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+        <ImageView android:id="@id/imgv_appicon" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+        <TextView android:id="@id/tv_appsize" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/textview16sp" />
+        <TextView android:id="@id/tv_appname" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_toRightOf="@id/imgv_appicon" style="@style/textview16sp" />
+        <TextView android:id="@id/tv_appisroom" android:layout_marginTop="3.0dip" android:layout_toRightOf="@id/imgv_appicon" android:layout_below="@id/tv_appname" android:layout_alignLeft="@id/tv_appname" style="@style/textview14sp" />
+    </RelativeLayout>
+    <View android:background="@color/black30" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_option_app" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+        <TextView android:id="@id/tv_launch_app" android:text="启动" android:drawableTop="@drawable/phoneicon_yellow_n" style="@style/tvyellow14sp" />
+        <View android:background="@color/black30" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <TextView android:id="@id/tv_uninstall_app" android:text="卸载" android:drawableTop="@drawable/deleteicon_yellow_n" style="@style/tvyellow14sp" />
+        <View android:background="@color/black30" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <TextView android:id="@id/tv_share_app" android:text="分享" android:drawableTop="@drawable/shareicon_yellow_n" style="@style/tvyellow14sp" />
+        <View android:background="@color/black30" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <TextView android:id="@id/tv_setting_app" android:text="设置" android:drawableTop="@drawable/settingicon_yellow_n" style="@style/tvyellow14sp" />
+    </LinearLayout>
+</LinearLayout>

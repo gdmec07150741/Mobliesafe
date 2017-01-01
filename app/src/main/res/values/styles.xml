@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light" />
+    <style name="AppTheme" parent="@style/AppBaseTheme" />
+    <style name="dialog_custom" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">#00000000</item>
+    </style>
+    <style name="textview12sp" parent="@style/wrapcontent">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="textview14sp" parent="@style/wrapcontent">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="textview16sp" parent="@style/wrapcontent">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="tvyellow14sp" parent="@style/zero_widthwrapcontent">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/bright_yellow</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">3.0dip</item>
+    </style>
+    <style name="wrapcontent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="zero_widthwrapcontent">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+</resources>

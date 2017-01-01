@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="10.0">
+        <FrameLayout android:id="@id/fl_noblacknumber" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/noblacknumbericon" android:background="@drawable/no_blacknumbericon" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerInParent="true" />
+                <TextView android:textColor="@color/light_gary" android:layout_marginTop="16.0dip" android:text="您还没有添加黑名单" android:textScaleX="1.2" android:layout_below="@id/noblacknumbericon" android:layout_centerHorizontal="true" style="@style/textview16sp" />
+            </RelativeLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@id/fl_haveblacknumber" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ListView android:id="@id/lv_blacknumbers" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="#ffffffff" android:dividerHeight="1.0dip" />
+        </FrameLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:layout_gravity="center" android:id="@id/btn_addblacknumber" android:background="@drawable/add_blacknumber_btn_selector" android:layout_width="170.0dip" android:layout_height="40.0dip" android:layout_margin="10.0dip" />
+    </LinearLayout>
+</LinearLayout>

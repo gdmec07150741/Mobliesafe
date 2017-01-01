@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imgv_appicon_cacheclean" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:id="@id/tv_appname_cacheclean" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:maxLength="24" android:layout_toRightOf="@id/imgv_appicon_cacheclean" style="@style/textview16sp" />
+    <TextView android:id="@id/tv_appsize_cacheclean" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_toRightOf="@id/imgv_appicon_cacheclean" android:layout_below="@id/tv_appname_cacheclean" style="@style/textview12sp" />
+    <ImageView android:background="@drawable/cachescan_righticon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

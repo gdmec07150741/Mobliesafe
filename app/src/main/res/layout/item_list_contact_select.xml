@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#10000000" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view1" android:background="@drawable/contact_icon" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_margin="15.0dip" android:layout_centerVertical="true" />
+    <TextView android:textColor="@color/purple" android:id="@id/tv_name" android:layout_toRightOf="@id/view1" android:layout_alignTop="@id/view1" style="@style/textview16sp" />
+    <TextView android:textColor="@color/purple" android:id="@id/tv_phone" android:layout_marginTop="10.0dip" android:layout_toRightOf="@id/view1" android:layout_below="@id/tv_name" style="@style/textview14sp" />
+</RelativeLayout>

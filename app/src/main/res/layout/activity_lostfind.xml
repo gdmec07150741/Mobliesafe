@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textColor="@color/purple" android:layout_marginLeft="10.0dip" android:text="安全号码" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/textview16sp" />
+        <TextView android:textColor="@color/purple" android:id="@id/tv_safephone" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/textview16sp" />
+    </RelativeLayout>
+    <View android:background="#10000000" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textColor="@color/purple" android:id="@id/tv_lostfind_protectstauts" android:layout_marginLeft="10.0dip" android:text="防盗保护是否开启" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/textview16sp" />
+        <ToggleButton android:id="@id/togglebtn_lostfind" android:background="@drawable/toggle_btn_bg_selector" android:layout_width="70.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:textOn="" android:textOff="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="#10000000" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:id="@id/rl_inter_setup_wizard" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textColor="@color/purple" android:layout_marginLeft="10.0dip" android:text="重新进入设置向导" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/textview16sp" />
+        <ImageView android:background="@drawable/arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="#10000000" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center" android:background="@drawable/round_purple_tv_bg" android:layout_width="fill_parent" android:layout_height="35.0dip" android:text="短信指令功能简介" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <TextView android:textColor="@color/purple" android:layout_marginRight="10.0dip" android:text="\#*alarm*#" android:layout_alignParentRight="true" style="@style/textview16sp" />
+            <TextView android:textColor="@color/purple" android:layout_marginLeft="10.0dip" android:text="播放报警音乐" android:drawableLeft="@drawable/sim_alarm_icon_small" android:drawablePadding="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/textview16sp" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <TextView android:textColor="@color/purple" android:layout_marginRight="10.0dip" android:text="\#*location*#" android:layout_alignParentRight="true" style="@style/textview16sp" />
+            <TextView android:textColor="@color/purple" android:layout_marginLeft="10.0dip" android:text="GPS追踪" android:drawableLeft="@drawable/location_icon_small" android:drawablePadding="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/textview16sp" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <TextView android:textColor="@color/purple" android:layout_marginRight="10.0dip" android:text="\#*lockScreen*#" android:layout_alignParentRight="true" style="@style/textview16sp" />
+            <TextView android:textColor="@color/purple" android:layout_marginLeft="10.0dip" android:text="远程锁屏" android:drawableLeft="@drawable/lock_screen_icon_small" android:drawablePadding="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/textview16sp" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <TextView android:textColor="@color/purple" android:layout_marginRight="10.0dip" android:text="\#*wipedata*#" android:layout_alignParentRight="true" style="@style/textview16sp" />
+            <TextView android:textColor="@color/purple" android:layout_marginLeft="10.0dip" android:text="远程删除数据" android:drawableLeft="@drawable/delete_data_small" android:drawablePadding="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/textview16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

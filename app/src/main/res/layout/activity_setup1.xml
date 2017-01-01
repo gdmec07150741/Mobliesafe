@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="100.0">
+        <RelativeLayout android:background="@color/purple" android:layout_width="fill_parent" android:layout_height="160.0dip">
+            <ImageView android:id="@id/imgv" android:background="@drawable/add" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_centerInParent="true" />
+            <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="手机防盗向导" android:layout_below="@id/imgv" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textColor="@color/purple" android:gravity="center" android:layout_width="0.0dip" android:text="SIM卡变更报警" android:drawableTop="@drawable/sim_alarm_icon" android:drawablePadding="5.0dip" android:layout_weight="1.0" style="@style/textview16sp" />
+                <TextView android:textColor="@color/purple" android:gravity="center" android:layout_width="0.0dip" android:text="GPS追踪" android:drawableTop="@drawable/location_icon" android:drawablePadding="5.0dip" android:layout_weight="1.0" style="@style/textview16sp" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textColor="@color/purple" android:gravity="center" android:layout_width="0.0dip" android:text="远程锁屏" android:drawableTop="@drawable/lock_screen_icon" android:drawablePadding="5.0dip" android:layout_weight="1.0" style="@style/textview16sp" />
+                <TextView android:textColor="@color/purple" android:gravity="center" android:layout_width="0.0dip" android:text="远程删除数据" android:drawableTop="@drawable/delete_data" android:drawablePadding="5.0dip" android:layout_weight="1.0" style="@style/textview16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:background="@color/purple" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_weight="10.0">
+        <include layout="@layout/setup_radiogroup" />
+    </LinearLayout>
+</LinearLayout>
